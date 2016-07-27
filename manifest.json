@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "dogs_extension",
-	"description": "Replace photos on Facebook with dogs",
+	"name": "puppybook",
+	"description": "Replace photos on Facebook with puppies",
 	"version": "0.0.1",
   "content_scripts": [
     {
