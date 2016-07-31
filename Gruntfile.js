@@ -4,7 +4,7 @@ module.exports = function(grunt){
     // Configure tasks
     concat: {
       release: {
-        src: ["js/values.js", "js/prompt.js", "js/getImages.js", "js/events.js"],
+        src: ["js/values.js", "js/prompt.js", "js/getImages.js", "js/events.js", "js/main.js"],
         dest: "release/main.js"
       }
     },
@@ -15,7 +15,7 @@ module.exports = function(grunt){
       }
     },
     jshint: {
-      files: ["js/values.js", "js/prompt.js", "js/getImages.js", "js/events.js"]
+      files: ["js/values.js", "js/prompt.js", "js/getImages.js", "js/events.js", "js/main.js"]
     },
     watch: {
       // "<%= jshint.files %>" reference to jshint files, see above
