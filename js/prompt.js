@@ -5,7 +5,7 @@ var phoneMatches = phoneNumberPattern.exec(phoneNumber);
 var areaCode = phoneMatches[1];
 var output = "<h1>Hello, " + userName + "!</h1>";
 var userLocation = pbValues.areaCodes[areaCode];
-console.log(userLocation);
+
 // Is the phone number valid?
 if(phoneNumberPattern.test(phoneNumber)){
   output = output + "<p>" + pbValues.projectName + " " + pbValues.versionNumber +
@@ -14,4 +14,4 @@ if(phoneNumberPattern.test(phoneNumber)){
   output = output + "<h2>That phone number is invalid: " + phoneNumber;
 }
 
-document.body.innerHTML = output;
+document.getElementById("output").innerHTML = output;
