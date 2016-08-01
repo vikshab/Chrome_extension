@@ -6,7 +6,7 @@ function main() {
 
   setInterval(function() {
     images = getImages();
-    replaceImages(images, location);
+    replaceImages(images);
   }, 3000);
 }
 
