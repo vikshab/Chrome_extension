@@ -21,6 +21,14 @@ module.exports = function(grunt){
       // "<%= jshint.files %>" reference to jshint files, see above
       files: ["<%= jshint.files %>", "manifest.json"],
       tasks: ["default"]
+    },
+    jasmine: {
+      test: {
+        src: ["js/values.js", "js/prompt.js", "js/getImages.js", "js/main.js"],
+        options: {
+          specs: "test/*.js"
+        }
+      }
     }
   });
 
