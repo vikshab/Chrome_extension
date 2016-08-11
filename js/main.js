@@ -1,5 +1,4 @@
 function main() {
-  var userName = getUserName();
   var images = getImages();
 
   setInterval(function() {
